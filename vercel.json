@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/**/*.ts",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/webhook/line",
+            "dest": "/api/line"
+        },
+        {
+            "src": "/webhook/facebook",
+            "dest": "/api/facebook"
+        },
+        {
+            "src": "/health",
+            "dest": "/api/health"
+        }
+    ]
+}

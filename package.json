@@ -1,0 +1,12 @@
+{
+    "name": "clubsbot-webhook",
+    "version": "2.0.0",
+    "description": "LINE Webhook for Club S Photography",
+    "scripts": {
+        "dev": "vercel dev",
+        "deploy": "vercel --prod"
+    },
+    "dependencies": {
+        "@line/bot-sdk": "^8.0.0"
+    }
+}
